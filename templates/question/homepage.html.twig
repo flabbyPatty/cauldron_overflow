@@ -26,7 +26,7 @@
               </div>
             </div>
             <div class="col">
-              <a class="q-title" href="#">
+              <a class="q-title" href="{{ path('app_question_show', { slug: 'reversing-a-spell' }) }}">
                 <h2>Reversing a Spell</h2>
               </a>
               <div class="q-display p-3">
@@ -38,7 +38,8 @@
             </div>
           </div>
         </div>
-        <a class="answer-link" href="#" style="color: #fff;">
+        <a class="answer-link" href="{{ path('app_question_show', { slug: 'reversing-a-spell' }) }}"
+          style="color: #fff;">
           <p class="q-display-response text-center p-3">
             <i class="fa fa-magic magic-wand"></i> 6 answers
           </p>
@@ -57,7 +58,7 @@
             </div>
           </div>
           <div class="col">
-            <a class="q-title" href="#">
+            <a class="q-title" href="{{ path('app_question_show', { slug: 'pausing-a-spell' }) }}">
               <h2>Pausing a Spell</h2>
             </a>
             <div class="q-display p-3">
@@ -68,7 +69,7 @@
           </div>
         </div>
       </div>
-      <a class="answer-link" href="#" style="color: #fff;">
+      <a class="answer-link" href="{{ path('app_question_show', { slug: 'pausing-a-spell' }) }}" style="color: #fff;">
         <p class="q-display-response text-center p-3">
           <i class="fa fa-magic magic-wand"></i> 15 answers
         </p>
