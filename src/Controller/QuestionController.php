@@ -5,7 +5,6 @@ namespace App\Controller;
 use App\Service\MarkdownHelper;
 use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Twig\Environment;
 
@@ -43,8 +42,6 @@ class QuestionController extends AbstractController
         if ($this->isDebug) {
             $this->logger->info('We are in debug mode!');
         }
-
-        throw new \Exception('bad stuff happened!');
 
         $answers = [
             'Make sure your cat is sitting `purrfectly` still 🤣',
